@@ -11,12 +11,3 @@ class CreatePostForm(FlaskForm):
     img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
     body = CKEditorField("Blog Content", validators=[DataRequired()])
     submit = SubmitField("Submit Post")
-
-
-# TODO: Create a RegisterForm to register new users
-
-
-# TODO: Create a LoginForm to login existing users
-
-
-# TODO: Create a CommentForm so users can leave comments below posts
